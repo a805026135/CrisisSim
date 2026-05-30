@@ -4,7 +4,7 @@
 
 利用大语言模型驱动多个 AI 角色，在虚拟沙盘中模拟品牌危机事件中不同利益相关方（受害者、KOL、支持者）的舆论反应。系统支持多轮策略推演、实时情绪分析和立场演化追踪，帮助危机公关团队在决策前预演不同应对方案的效果。
 
-<!-- 在此处放入系统整体截图 -->
+![系统整体截图](docs/screenshots/01-overview-hero.png)
 
 ---
 
@@ -43,7 +43,7 @@
 | **流式策略输出** | 策略生成过程通过 SSE 实时显示，无需等待完整响应 |
 | **多 LLM 后端** | 工厂模式可插拔，支持 OpenAI 兼容接口 / Anthropic Claude / Ollama 本地部署，切换仅需修改 `.env` |
 
-<!-- 在此处放入功能概览截图 -->
+![功能概览截图](docs/screenshots/02-features-overview.png)
 
 ---
 
@@ -83,7 +83,7 @@
                        └─────────────────────────────────────────────┘
 ```
 
-<!-- 在此处放入架构图截图 -->
+![架构图截图](docs/screenshots/03-architecture-diagram.png)
 
 ### 项目目录结构
 
@@ -465,7 +465,7 @@ provider = create_provider()  # 读取 config.LLM_PROVIDER
 
 ## 预设场景详解
 
-<!-- 在此处放入各场景截图 -->
+![场景总览截图](docs/screenshots/04-scenarios-overview.png)
 
 ### 场景一：喜茶奶茶食品安全事件
 
@@ -574,7 +574,7 @@ python app.py
 
 访问 `http://localhost:5000` 即可使用。
 
-<!-- 在此处放入启动界面截图 -->
+![启动界面截图](docs/screenshots/05-startup-page.png)
 
 ---
 
@@ -752,7 +752,7 @@ POST /api/execute
 
 从 5 个预设场景中选择一个，系统自动加载对应的 Agent 角色、知识库和舆情种子数据。
 
-<!-- 在此处放入场景选择截图 -->
+![场景选择截图](docs/screenshots/06-scenario-select.png)
 
 ### Step 2: 配置 Agent 角色
 
@@ -762,7 +762,7 @@ POST /api/execute
 - 使用网络搜索补充品牌背景和舆情情报
 - 手动导入或编辑舆情数据
 
-<!-- 在此处放入 Agent 配置截图 -->
+![Agent配置截图](docs/screenshots/07-agent-config.png)
 
 ### Step 3: 策略推演
 
@@ -771,7 +771,7 @@ POST /api/execute
 - 选择策略 A 或 B，或切换到"自定义声明"手动撰写
 - 点击执行，观察各 Agent 的实时反应
 
-<!-- 在此处放入策略选择截图 -->
+![策略选择截图](docs/screenshots/08-strategy-select.png)
 
 ### Step 4: 实时观察仿真过程
 
@@ -780,7 +780,7 @@ POST /api/execute
 - **立场演化**：每轮结束后各 Agent 立场折线图更新
 - **PR 顾问反思**：每轮结束显示策略效果评估
 
-<!-- 在此处放入仿真过程截图 -->
+![仿真过程截图](docs/screenshots/09-simulation-running.png)
 
 ### Step 5: 多轮迭代与复盘
 
@@ -788,7 +788,7 @@ POST /api/execute
 - 比较不同策略在多轮中的舆情走向差异
 - 查看最终总结报告，包含每轮策略效果和情绪变化
 
-<!-- 在此处放入分析仪表盘截图 -->
+![分析仪表盘截图](docs/screenshots/10-analysis-dashboard.png)
 
 ---
 
