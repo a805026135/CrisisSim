@@ -141,7 +141,7 @@ PR 顾问生成 2 套候选策略 (含官方声明草稿)
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/YOUR_USERNAME/CrisisSim.git
+git clone https://github.com/a805026135/CrisisSim.git
 cd CrisisSim
 
 # 2. 安装依赖
